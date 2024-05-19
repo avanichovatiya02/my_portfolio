@@ -1,0 +1,330 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Home section styles */
+#home {
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    color: #fff;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh ;
+    text-align: center;
+    
+}
+#home-content{
+    margin-top: -150px;
+}
+
+#home h1 {
+    margin: 0;
+    font-size: 4em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#home h2 {
+    margin: 20px 0;
+    font-size: 3em;
+    color: #f39c12;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#home button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #34495e;
+    background: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#home button:hover {
+    background: #f39c12;
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section styles */
+#about {
+    background-color: #ecf0f1; /* Background color */
+    padding: 100px 20px;
+    text-align: center;
+    color:#333;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: black;
+    font-weight: bold;
+}
+
+.about-content span {
+    font-weight: bold;
+}
+.about-container button{
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.about-container button:hover{
+    background-color: #2980b9;
+}
+#skills {
+    background-color: #3498db; /* Background color for the Skills section (Blue) */
+    color: #fff;
+    padding: 100px 20px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-container h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-container ul li {
+    background: rgba(255, 255, 255, 0.2); /* Transparent background for list items */
+    color: #fff;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.skills-container ul li:hover {
+    background: rgba(255, 255, 255, 0.3); /* Lighter transparent background on hover */
+    cursor: pointer;
+}
+#resume {
+    background-color: #ecf0f1; /* Background color for the Resume section */
+    color: #333; /* Text color */
+    padding: 100px 20px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-container h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.resume-container p {
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.resume-container a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.resume-container a:hover {
+    background-color: #2980b9; /* Button background color on hover */
+}
+#contact {
+    background-color: #3498db; /* Background color for the Contact Me section */
+    color: #fff; /* Text color */
+    padding: 100px 20px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+button[type="submit"] {
+    padding: 15px 30px;
+    background-color: #f39c12; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e67e22; /* Button background color on hover */
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f39c12;
+}
+.email{
+    font-size: 1em;
+}
+.email a{
+    color: #fff;
+
+}
+.email a:hover{
+    text-decoration: underline;
+}
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+    /* Laptop specific styles */
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet specific styles */
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+    /* Mobile specific styles */
+}
+
